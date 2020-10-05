@@ -1,0 +1,190 @@
+<RelativeLayout android:id="@+id/button_re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF6F6"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/re_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:id="@+id/main_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/re_word_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <yanzhikai.textpath.AsyncTextPathView
+                            app:duration="450"
+                            android:typeface="sans"
+                            app:paintStrokeColor="@color/mainTextColor"
+                            app:pathStrokeColor="@color/mainTextColor"
+                            app:text="Android"
+                            app:textInCenter="true"
+                            app:textSize="60sp"
+                            android:padding="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/txt_word"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="65dp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="apple"
+                            android:textColor="@color/mainTextColor"
+                            />
+                        <EditText
+
+                            android:inputType="textEmailAddress"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_white_conor_bc"
+                            android:padding="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ed_word"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="60dp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:hint="Word:"
+                            android:textColor="@color/mainTextColor"
+                            />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_line"
+                        android:background="@color/mainTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/tv_times_bc"
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:id="@+id/tv_times"
+                            android:layout_marginTop="-5dp"
+                            android:textSize="12dp"
+                            android:textColor="#fff"
+                            android:text="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/re_mean_content"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/mainTextColor"
+                    android:id="@+id/txt_wordMean"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="当前没有单词"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"/>
+                <EditText
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:visibility="gone"
+                    android:background="@drawable/edit_white_conor_bc"
+                    android:textColor="@color/mainTextColor"
+                    android:id="@+id/ed_wordmean"
+                    android:gravity="top"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:hint="Mean:"
+                    android:layout_centerVertical="true"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"/>
+                <LinearLayout
+
+                    android:id="@+id/lin_button"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <Button
+
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:background="@drawable/btn_conor_bc"
+                        android:text="关闭"
+                        android:id="@+id/btn_cancle"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+
+                        />  <Button
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:background="@drawable/btn_conor_bc"
+                    android:text="添加"
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <include
+        layout="@layout/layout_right_lable"/>
+
+    <include layout="@layout/layout_buttom_delect_check"/>
+    <include layout="@layout/layout_buttom_seekbar"/>
+    <include layout="@layout/layout_info_dialog"/>
+    <include layout="@layout/layout_left_show_control"/>
+    <include layout="@layout/layout_list_dialog"/>
+
+</RelativeLayout>
+</RelativeLayout>

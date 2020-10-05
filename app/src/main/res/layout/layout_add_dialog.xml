@@ -1,0 +1,77 @@
+<LinearLayout android:layout_marginBottom="-400dp"
+    android:id="@+id/dialog_add"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:textColorHint="@color/mainTextColor"
+                android:textColor="@color/mainTextColor"
+                android:hint="WORD:"
+                android:background="@drawable/edit_white_conor_bc"
+                android:id="@+id/tv_word"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <EditText
+                android:textColorHint="@color/mainTextColor"
+                android:textColor="@color/mainTextColor"
+                android:background="@drawable/edit_white_conor_bc"
+                android:id="@+id/tv_wordMean"
+                android:hint="MEAN:"
+                android:gravity="top"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:background="@drawable/btn_conor_bc"
+                android:text="关闭"
+                android:id="@+id/btn_cancle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+
+                />  <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@drawable/btn_conor_bc"
+            android:text="添加"
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

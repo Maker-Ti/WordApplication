@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="2dp"
+    android:layout_height="100dp"
+    android:background="@drawable/left_control_line"/>
+    <LinearLayout
+        android:background="@drawable/left_control_line"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="2dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_word_control"
+            android:background="@drawable/left_control_top_white"
+            android:layout_width="match_parent"
+            android:textColor="#483D8B"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#fff"/>
+
+        <TextView
+            android:id="@+id/tv_wordmean_control"
+            android:textColor="#483D8B"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:background="@drawable/left_control_buttom_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

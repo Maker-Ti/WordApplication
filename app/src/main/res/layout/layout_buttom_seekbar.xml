@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="-50dp"
+    android:id="@+id/re_seekbar"
+    android:background="@color/mainTextColor"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt_seekbar"
+        android:textColor="#ffffff"
+        android:text="最后"
+        android:textSize="16dp"/>
+
+</RelativeLayout>

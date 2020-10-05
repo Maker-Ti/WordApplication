@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/mainTextColor"
+    android:orientation="horizontal"
+    android:id="@+id/re_delete_check"
+    android:layout_marginBottom="-50dp"
+    android:layout_height="50dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="是否删除该单词？"
+    android:textColor="#ffffff"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"
+    android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_red_circle_bc"
+            android:text="否"
+            android:textColor="#000"
+            android:id="@+id/btn_delete_cancle"/>
+        <Button
+            android:id="@+id/btn_delete_sure"
+            android:text="确定"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:background="#fff"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</RelativeLayout>

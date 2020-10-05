@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="10dp"
+    android:visibility="gone"
+    android:id="@+id/re_info_dialog"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+
+    android:layout_height="335dp">
+<TextView
+    android:background="@drawable/info_bc"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center|left"
+    android:textColor="@color/mainTextColor"
+    android:text="
+1.上下滑动可切换单词\n
+    \n
+2.长按单词可以删除单词\n
+\n
+3.右侧‘列表’顺序查看单词\n
+\n
+4.‘列表’中可批量管理单词\n
+\n
+5.右侧‘随机’随机查看单词\n
+\n
+6.可上传与同步添加的单词(大概）
+\n\n
+7.点击左侧上下按钮
+\n     可显示与隐藏单词或词意
+\n\n
+版权归Maker所有\n
+联系Q 1335334505
+"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_close_bc"/>
+
+</RelativeLayout>
